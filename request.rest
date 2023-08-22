@@ -1,4 +1,4 @@
-// Services requests
+// ------------ Services requests ------------
 
 // POST Method
 POST http://localhost:3000/api/services
@@ -37,7 +37,9 @@ Content-Type: application/json
 }
 
 ###
-// Parties request
+// ------------ Parties requests ------------
+
+// POST method
 POST http://localhost:3000/api/parties
 Content-Type: application/json
 
@@ -67,4 +69,38 @@ Content-Type: application/json
 // GET method
 GET http://localhost:3000/api/parties
 
+###
+// GET method by ID
+GET http://localhost:3000/api/party/64df62f1df3f02e4c47419b5
 
+###
+// DELETE method by ID
+DELETE http://localhost:3000/api/party/64de3de1b483083a130b0656
+
+###
+// UPDATE method by ID
+PUT http://localhost:3000/api/party/64df62f1df3f02e4c47419b5
+
+Content-Type: application/json
+
+{
+    "title": "Meu evento 4",
+    "author": "Carlos",
+    "description": "Um frevo cabuloso",
+    "budget": 1000,
+    "image": "imagemurl",
+    "services": [
+        {
+            "name": "Serviços 03",
+            "description": "Serviços 03 dia 25/09 na chacará tudo nosso nada deles.",
+            "price": 1500,
+            "image": "imagemurlaqui"
+        },
+        {
+            "name": "Serviços 05",
+            "description": "Serviços 05 dia 30/09 na chacará tudo nosso nada deles.",
+            "price": 2000,
+            "image": "imagemurlaqui"
+        }
+    ]
+}
