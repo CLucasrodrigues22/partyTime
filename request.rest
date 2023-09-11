@@ -40,7 +40,7 @@ Content-Type: application/json
 // ------------ Parties requests ------------
 
 // POST method
-POST http://localhost:3000/api/parties
+POST http://localhost:4000/api/parties
 Content-Type: application/json
 
 {
@@ -67,7 +67,7 @@ Content-Type: application/json
 
 ###
 // GET method
-GET http://localhost:3000/api/parties
+GET http://localhost:4000/api/parties
 
 ###
 // GET method by ID
